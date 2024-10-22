@@ -29,11 +29,11 @@ export default class HaHistoryService {
       type: 'history/stream',  
       entity_ids: trackerEntityIds,
       significant_changes_only: false,
-      start_time: start.toISOString()
+      start_time: start.toISOString().split('.')[0]+"Z";
     };
 
     if (end) {
-      params.end_time = end.toISOString();
+      params.end_time = end.toISOString().split('.')[0]+"Z";
     }
 
     try {
