@@ -1,5 +1,5 @@
 {
-    "name": "map-card",
+    "name": "map-card-custom",
     "render_readme": true,
-    "filename":"map-card.js"
+    "filename":"map-card-custom.js"
 }
